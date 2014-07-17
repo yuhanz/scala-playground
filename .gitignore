@@ -1,0 +1,14 @@
+*.iml
+.idea/
+*.classpath
+*/.classpath
+*.project
+*/.project
+*.settings
+*/.settings
+.DS_Store
+*/.DS_Store
+lib/*.jar
+lib/*.xml
+lib/*.properties
+*.xml

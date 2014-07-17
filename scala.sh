@@ -2,8 +2,8 @@
 find lib -name \*.jar -exec unzip -v {} \; | grep -oh --color=never '[^[:space:]]*class$' | tr / . | sed -E 's/^(.*).class$/import \1/' > /tmp/imports.scala
 find lib -name \*.jar -exec unzip -v {} \; | grep -oh --color=never '[^[:space:]]*xml$' | sort > /tmp/xmls.txt
 
-sublime /tmp/xmls.txt
-sublime /tmp/imports.scala
+atom /tmp/xmls.txt
+atom /tmp/imports.scala
 
 LIB_PATH=`find lib | tr "\n" :`
 
